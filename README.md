@@ -1,2 +1,2 @@
 # Cajero-Automatico
-Proyecto final de Javascript dekl curso Devf
+Proyecto final de Javascript del curso Devf
