@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BANCO DEVF</title>
+    <link rel="stylesheet" href="./Style/styleIndex.css">
+    <link rel="stylesheet" href="./Style/styleIndex.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css">
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+</head>
+
+<body>
+    <div class="flex-container">
+        <div class="marquesina">
+            <marquee direction="left" id="marquesina">Selecciona tu movimiento</marquee>
+        </div>
+        <div class="cajero">
+            <div class="superior">
+                <div class="view">
+                    <div class="screen2">
+                        <p id="data"></p>
+                        <div class="container">
+                            <div class="operaciones">
+                                <div class="row bg-light border border-info rounded-5">
+                                    <div class="col-6">
+                                        <div class="icon">
+                                            <i class="bi bi-currency-dollar"></i>
+                                        </div>
+                                        <div>
+                                            <button id="consulta" class="button-transaction bg-light text-info"
+                                                onclick="consulta()">Consultar</button>
+                                        </div>
+                                    </div>
+                                    <div class="col-6">
+                                        <div class="icon">
+                                            <i class="bi bi-cash-coin"></i>
+                                        </div>
+                                        <div>
+                                            <button id="deposito" class="button-transaction bg-light text-info"
+                                                onclick="deposito()">Depositar</button>
+                                        </div>
+                                    </div>
+                                    <div class="col-6">
+                                        <div class="icon">
+                                            <i class="bi bi-upload heig"></i>
+                                        </div>
+                                        <div>
+                                            <button id="retiro" class="button-transaction bg-light text-info "
+                                                onclick="retiro()">Retirar</button>
+                                        </div>
+                                    </div>
+                                    <div class="col-6">
+                                        <div class="icon">
+                                            <i class="bi bi-x-square"></i>
+                                        </div>
+                                        <div>
+                                            <button id="cerrar" class="button-transaction bg-light text-info"
+                                                onclick="location.href ='./index.html'">Salir</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+                    integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+                    crossorigin="anonymous"></script>
+</body>
+<script src="./scripts/operations.js"></script>
+
+</html>
